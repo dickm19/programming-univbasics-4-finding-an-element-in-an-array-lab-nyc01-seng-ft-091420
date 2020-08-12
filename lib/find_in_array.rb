@@ -1,7 +1,9 @@
 def find_element_index(array, value_to_find)
- value = array.select do |element|
+  value = nil
+  array.select do |element|
     element == value_to_find
+    value = 
   end
-  array[value]
+  
   
 end
